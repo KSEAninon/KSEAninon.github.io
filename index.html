@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <aside class="navbar hide">
+        <a href="#bio">About Me</a>
+        <a href="#experience">Certificates</a>
+        <a href="#projects">Projects</a href=".projects">
+          <a href="#contact">Contact Me</a href=".projects">
+        <a id="arrow" onclick="slide()">></a>
+      </aside>
+
+      <section class="container">
+        <article id="bio">
+          <h2>About Me</h2>
+          <img src="img/headshot.png" alt="" class="small_img">
+          <p>
+              Karl Steven E. Aniñon  <br>
+              Birthdate: July 24, 1999 <br> <br>
+              Bachelor of Science in Computer Engineering from Southern Luzon State University batch 2020.
+              <br>
+              I found my passion in web development, the second most interesting field to me was robotics
+              and creation of electronic devices.
+              <br>
+              My strengths lie in creativity, planning, learning and problem solving. I have the most confidence in my css skills!
+          </p>
+        </article>
+        <article id="experience">
+          <h2>Certificates</h2>
+
+          <img src="img/Blender.jpg" alt="" class="wide_img">
+          <img src="img/Python.jpg" alt="" class="wide_img">
+          <img src="img/Html.jpg" alt="" class="wide_img">
+          <img src="img/Javascript.jpg" alt="" class="wide_img">
+          <img src="img/PHP.jpg" alt="" class="wide_img">
+
+          
+        </article>
+        <article id="projects">
+          <h2>Projects</h2>
+          <div class="project">
+            <h3>Simple Market</h3>
+            <img src="img/simplemarket.png" alt="" class="wide_img">
+            <p>
+              An e-commerce website for vegetables made using HTML, CSS, PHP and MySQL. 
+              The project includes user authentication, user and admin profiles. My first project using php!
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Computer Engineering Blog</h3>
+            <video src="img/Blog.mp4" autoplay muted loop></video>
+            <p>
+              A blog site created using HTML, CSS, BootStrap, PHP and MySQL.
+               The university project includes a blog page that submits content and images to a PHPMyAdmin database.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Supplier Database</h3>
+            <img src="img/supplier.PNG" alt="" class="wide_img">
+            <p>
+              A database web app that uses HTML, CSS, Javascript, Jquery and DataTables. The personal project was made using local storage and no databases.
+            </p>
+          </div>
+
+        </article>
+
+        <footer id="contact">
+          <div>
+            <img src="img/social-email.png" alt="">
+           <h6>E-mail: karl0724sa@gmail.com</h6>
+          </div>
+          <div>
+            <img src="img/linkedin.png" alt="">
+           <h6>LinkedIn: <a href="linkedin.com/in/karl-steven-aniñon-54a832213">linkedin.com/in/karl-steven-aniñon-54a832213</a> </h6>
+          </div>
+          <div>
+            <img src="img/phone-white.png" alt="">
+           <h6>Phone: +639153013044</h6>
+          </div>
+          <div>
+            <img src="img/house-white.png" alt="">
+           <h6>Address: Mauban, Quezon, Philippines</h6>
+          </div>
+        </footer>
+
+
+      </section>
+
+     
+
+    </main>
+  </body>
+
+  <script>
+    const navbar = $("aside.navbar");
+
+    function slide(){
+      navbar.toggleClass("show hide");
+    }
+  </script>
+
+</html>
